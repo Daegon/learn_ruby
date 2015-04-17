@@ -97,7 +97,8 @@ describe Temperature do
   # run *all* the tests during your refactoring, to make sure you did it right
   #
   describe "utility class methods" do
-
+    Temperature.ctof(50).should == 122
+    Temperature.ftoc(122).should == 50
   end
 
   # Here's another way to solve the problem!
